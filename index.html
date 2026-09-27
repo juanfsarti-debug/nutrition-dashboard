@@ -64,6 +64,8 @@ header{display:flex;align-items:center;justify-content:space-between;gap:8px;mar
 .trend svg{width:100%;height:auto;display:block}
 .tl{font-size:12px;color:var(--mut);margin:4px 0 2px}
 .empty{color:var(--mut);font-size:13px;padding:8px 0}
+.wk svg.wd{width:100%;height:auto;display:block;margin-top:10px}
+.wk .rg b{color:var(--txt);font-weight:700}
 footer{font-size:11px;color:#55575f;text-align:center;margin-top:8px}
 </style></head><body>
 <header>
@@ -73,10 +75,11 @@ footer{font-size:11px;color:#55575f;text-align:center;margin-top:8px}
 </header>
 <section class="card"><h2>Macros <span id="dnote"></span></h2><div class="rings" id="rings"></div></section>
 <section class="card" id="cal"></section>
+<section class="card wk"><h2><span id="wktitle" style="text-transform:uppercase;letter-spacing:.8px;font-weight:600">This week</span> <span id="wkrange"></span></h2><div class="rings" id="wkrings"></div><div id="wkdays"></div></section>
 <section class="card"><h2>Meals <span id="mcount"></span></h2><div id="meals"></div></section>
 <section class="card trend"><h2>7-day trend <span id="trange"></span></h2><div id="trend"></div></section>
-<footer id="foot">Updated 2026-09-27 11:09</footer>
-<script id="data" type="application/json">{"targets": {"protein": {"min": 130, "max": 170, "ideal": 150}, "fiber": {"min": 30, "max": 38, "ideal": 35}, "fat": {"min": 70, "max": 100, "ideal": 85}, "carbs": {"z2": 300, "hit": 350, "rest": 230, "tolerance_pct": 10}, "calories": {"baseline": 2350, "formula": "baseline + exercise burn"}}, "days": {"2026-09-26": {"type": "z2", "meals": [{"time": "07:14", "name": "Chocolate chip cookie", "kcal": 160, "protein": 2, "carbs": 21, "fat": 8, "fiber": 1}, {"time": "07:15", "name": "Nature's Own butter bread (2 slices)", "kcal": 140, "protein": 4, "carbs": 26, "fat": 2, "fiber": 1}, {"time": "07:15", "name": "La Delfina buffalo dulce de leche (1 tbsp)", "kcal": 70, "protein": 1.5, "carbs": 11, "fat": 2.5, "fiber": 0}, {"time": "07:16", "name": "Good&Gather mozzarella (1 slice)", "kcal": 60, "protein": 5, "carbs": 1, "fat": 4, "fiber": 0}, {"time": "07:58", "name": "Fairlife Core Power chocolate 14oz", "kcal": 170, "protein": 26, "carbs": 8, "fat": 4.5, "fiber": 1}, {"time": "07:58", "name": "2 hard-boiled eggs", "kcal": 140, "protein": 12, "carbs": 1, "fat": 10, "fiber": 0}, {"time": "12:39", "name": "Medium protein açaí bowl", "kcal": 650, "protein": 28, "carbs": 95, "fat": 20, "fiber": 10}, {"time": "13:39", "name": "Caldo de pollo + Mexican rice", "kcal": 510, "protein": 26, "carbs": 65, "fat": 12, "fiber": 6}, {"time": "14:29", "name": "Orgain A2 protein shake chocolate", "kcal": 160, "protein": 30, "carbs": 5, "fat": 3.5, "fiber": 1}, {"time": "18:39", "name": "Chipotle bowl: steak+chicken, beans, corn, pico, guac, cheese, fajita veg", "kcal": 925, "protein": 70, "carbs": 60, "fat": 50, "fiber": 18}, {"time": "20:44", "name": "Frozen cherries (handful)", "kcal": 45, "protein": 1, "carbs": 11, "fat": 0, "fiber": 1.5}], "burn": {"baseline": 2350, "exercise": 890, "notes": "1h46 outdoor Z2 ride"}}, "2026-09-27": {"type": "z2", "meals": [{"time": "07:09", "name": "2 slices butter toast + ~1.5 tbsp dulce de leche", "kcal": 245, "protein": 6, "carbs": 43, "fat": 5, "fiber": 1}, {"time": "07:58", "name": "2 hard-boiled eggs", "kcal": 140, "protein": 12, "carbs": 1, "fat": 10, "fiber": 0}, {"time": "10:30", "name": "Kale smoothie (full Core Power, ~25 g shake protein)", "kcal": 375, "protein": 32, "carbs": 41, "fat": 11, "fiber": 12}], "burn": {"baseline": 2350, "exercise": 870, "notes": "Z2 ride 1:45, 31.7 km, avg HR 113 (Zepp 873)"}}}, "built": "2026-09-27 11:09"}</script>
+<footer id="foot">Updated 2026-09-27 11:12</footer>
+<script id="data" type="application/json">{"targets": {"protein": {"min": 130, "max": 170, "ideal": 150}, "fiber": {"min": 30, "max": 38, "ideal": 35}, "fat": {"min": 70, "max": 100, "ideal": 85}, "carbs": {"z2": 300, "hit": 350, "rest": 230, "tolerance_pct": 10}, "calories": {"baseline": 2350, "formula": "baseline + exercise burn"}, "z2_week": 300, "z5_week_low": 20, "z5_week_high": 24}, "days": {"2026-09-26": {"type": "z2", "meals": [{"time": "07:14", "name": "Chocolate chip cookie", "kcal": 160, "protein": 2, "carbs": 21, "fat": 8, "fiber": 1}, {"time": "07:15", "name": "Nature's Own butter bread (2 slices)", "kcal": 140, "protein": 4, "carbs": 26, "fat": 2, "fiber": 1}, {"time": "07:15", "name": "La Delfina buffalo dulce de leche (1 tbsp)", "kcal": 70, "protein": 1.5, "carbs": 11, "fat": 2.5, "fiber": 0}, {"time": "07:16", "name": "Good&Gather mozzarella (1 slice)", "kcal": 60, "protein": 5, "carbs": 1, "fat": 4, "fiber": 0}, {"time": "07:58", "name": "Fairlife Core Power chocolate 14oz", "kcal": 170, "protein": 26, "carbs": 8, "fat": 4.5, "fiber": 1}, {"time": "07:58", "name": "2 hard-boiled eggs", "kcal": 140, "protein": 12, "carbs": 1, "fat": 10, "fiber": 0}, {"time": "12:39", "name": "Medium protein açaí bowl", "kcal": 650, "protein": 28, "carbs": 95, "fat": 20, "fiber": 10}, {"time": "13:39", "name": "Caldo de pollo + Mexican rice", "kcal": 510, "protein": 26, "carbs": 65, "fat": 12, "fiber": 6}, {"time": "14:29", "name": "Orgain A2 protein shake chocolate", "kcal": 160, "protein": 30, "carbs": 5, "fat": 3.5, "fiber": 1}, {"time": "18:39", "name": "Chipotle bowl: steak+chicken, beans, corn, pico, guac, cheese, fajita veg", "kcal": 925, "protein": 70, "carbs": 60, "fat": 50, "fiber": 18}, {"time": "20:44", "name": "Frozen cherries (handful)", "kcal": 45, "protein": 1, "carbs": 11, "fat": 0, "fiber": 1.5}], "burn": {"baseline": 2350, "exercise": 890, "notes": "1h46 outdoor Z2 ride"}}, "2026-09-27": {"type": "z2", "meals": [{"time": "07:09", "name": "2 slices butter toast + ~1.5 tbsp dulce de leche", "kcal": 245, "protein": 6, "carbs": 43, "fat": 5, "fiber": 1}, {"time": "07:58", "name": "2 hard-boiled eggs", "kcal": 140, "protein": 12, "carbs": 1, "fat": 10, "fiber": 0}, {"time": "10:30", "name": "Kale smoothie (full Core Power, ~25 g shake protein)", "kcal": 375, "protein": 32, "carbs": 41, "fat": 11, "fiber": 12}], "burn": {"baseline": 2350, "exercise": 870, "notes": "Z2 ride 1:45, 31.7 km, avg HR 113 (Zepp 873)"}}}, "training": {"tz": "America/Los_Angeles", "weeks": {"2026-08-24": {"z2_bike": 210.8, "z5_all": 12.7, "sessions": [{"d": "2026-08-26", "t": "17:35", "kind": "other", "label": "Other", "min": 0, "z2": 0.0, "z5": 0.0}, {"d": "2026-08-28", "t": "06:52", "kind": "bike", "label": "Ride", "min": 7, "z2": 6.4, "z5": 0.0}, {"d": "2026-08-28", "t": "07:00", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-08-28", "t": "16:08", "kind": "bike", "label": "Ride", "min": 101, "z2": 99.4, "z5": 0.0}, {"d": "2026-08-29", "t": "09:28", "kind": "bike", "label": "Ride", "min": 87, "z2": 84.5, "z5": 0.0}, {"d": "2026-08-30", "t": "07:38", "kind": "bike", "label": "Norway 4×4", "min": 41, "z2": 20.5, "z5": 12.7}]}, "2026-08-31": {"z2_bike": 187.2, "z5_all": 10.9, "sessions": [{"d": "2026-08-31", "t": "05:33", "kind": "bike", "label": "Ride", "min": 64, "z2": 60.4, "z5": 0.0}, {"d": "2026-09-01", "t": "06:22", "kind": "bike", "label": "Indoor bike", "min": 10, "z2": 10.0, "z5": 0.0}, {"d": "2026-09-01", "t": "06:34", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-01", "t": "14:13", "kind": "gym", "label": "Gym", "min": 19, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-02", "t": "07:04", "kind": "bike", "label": "Norway 4×4", "min": 41, "z2": 20.6, "z5": 10.9}, {"d": "2026-09-03", "t": "11:50", "kind": "bike", "label": "Ride", "min": 101, "z2": 96.2, "z5": 0.0}, {"d": "2026-09-03", "t": "16:39", "kind": "gym", "label": "Gym", "min": 10, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-04", "t": "13:53", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}]}, "2026-09-07": {"z2_bike": 148.7, "z5_all": 13.6, "sessions": [{"d": "2026-09-08", "t": "12:32", "kind": "bike", "label": "Indoor bike", "min": 24, "z2": 23.0, "z5": 0.0}, {"d": "2026-09-09", "t": "13:25", "kind": "bike", "label": "Indoor bike", "min": 20, "z2": 17.3, "z5": 0.0}, {"d": "2026-09-09", "t": "13:51", "kind": "bike", "label": "Indoor bike", "min": 14, "z2": 14.1, "z5": 0.0}, {"d": "2026-09-09", "t": "14:12", "kind": "gym", "label": "Gym", "min": 13, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-10", "t": "16:21", "kind": "bike", "label": "Indoor bike", "min": 30, "z2": 29.9, "z5": 0.0}, {"d": "2026-09-12", "t": "07:33", "kind": "bike", "label": "Norway 4×4", "min": 41, "z2": 19.4, "z5": 13.6}, {"d": "2026-09-13", "t": "05:37", "kind": "bike", "label": "Indoor bike", "min": 46, "z2": 45.0, "z5": 0.0}, {"d": "2026-09-13", "t": "06:23", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}]}, "2026-09-14": {"z2_bike": 155.8, "z5_all": 0.0, "sessions": [{"d": "2026-09-18", "t": "07:15", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-18", "t": "14:46", "kind": "bike", "label": "Ride", "min": 111, "z2": 104.8, "z5": 0.0}, {"d": "2026-09-19", "t": "08:50", "kind": "bike", "label": "Ride", "min": 56, "z2": 51.0, "z5": 0.0}]}, "2026-09-21": {"z2_bike": 352.4, "z5_all": 25.0, "sessions": [{"d": "2026-09-21", "t": "17:25", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-21", "t": "17:50", "kind": "gym", "label": "Gym", "min": 6, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-22", "t": "10:09", "kind": "bike", "label": "Ride", "min": 66, "z2": 60.4, "z5": 0.0}, {"d": "2026-09-22", "t": "11:19", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-22", "t": "11:41", "kind": "bike", "label": "Ride", "min": 10, "z2": 8.1, "z5": 0.0}, {"d": "2026-09-22", "t": "11:51", "kind": "bike", "label": "Norway 4×4", "min": 41, "z2": 17.9, "z5": 13.9}, {"d": "2026-09-23", "t": "06:41", "kind": "bike", "label": "Indoor bike", "min": 47, "z2": 45.2, "z5": 0.0}, {"d": "2026-09-24", "t": "06:41", "kind": "gym", "label": "Gym", "min": 11, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-24", "t": "16:03", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-25", "t": "05:13", "kind": "bike", "label": "Norway 4×4", "min": 41, "z2": 21.2, "z5": 11.1}, {"d": "2026-09-25", "t": "15:19", "kind": "gym", "label": "Gym", "min": 20, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-25", "t": "15:40", "kind": "gym", "label": "Gym", "min": 10, "z2": 0.0, "z5": 0.0}, {"d": "2026-09-26", "t": "09:36", "kind": "bike", "label": "Ride", "min": 106, "z2": 99.5, "z5": 0.0}, {"d": "2026-09-27", "t": "08:57", "kind": "bike", "label": "Ride", "min": 106, "z2": 100.1, "z5": 0.0}]}}}, "built": "2026-09-27 11:12"}</script>
 <script>
 const D=JSON.parse(document.getElementById('data').textContent);
 let D0=D; const T=D.targets; let days=Object.keys(D.days).sort();
@@ -96,7 +99,7 @@ function status(key,v,t){
   if(key==='protein'||key==='fiber') return [C.blue,'Above range'];
   return v>t.max*1.1?[C.red,'Over · +'+fmt(v-t.max)+' g']:[C.amber,'Slightly over · +'+fmt(v-t.max)+' g'];
 }
-function ring(v,t,col){
+function ring(v,t,col,unit,sub){
   const R=52,cx=64,cy=64,L=2*Math.PI*R, f=v/t.ideal;
   const a1=Math.min(f,1), a2=Math.max(0,Math.min(f-1,1));
   // range marks at min & max
@@ -109,8 +112,8 @@ function ring(v,t,col){
    ${a2>0?`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${col}" stroke-width="13" stroke-linecap="round"
      stroke-dasharray="${a2*L} ${L}" transform="rotate(-90 ${cx} ${cy})"/>`:''}
    ${t.min<t.ideal?mark(t.min,'#fff'):''}${t.max/t.ideal<=1.999&&t.max>t.ideal&&a1<1?'':''}
-   <text x="${cx}" y="${cy+2}" text-anchor="middle" fill="#f2f2f5" font-size="27" font-weight="800">${fmt(v)}</text>
-   <text x="${cx}" y="${cy+21}" text-anchor="middle" fill="#8b8d96" font-size="12" font-weight="600">/ ${t.ideal} g</text>
+   <text x="${cx}" y="${cy+2}" text-anchor="middle" fill="#f2f2f5" font-size="27" font-weight="800">${unit==='min'?Math.round(v):fmt(v)}</text>
+   <text x="${cx}" y="${cy+21}" text-anchor="middle" fill="#8b8d96" font-size="12" font-weight="600">${sub||('/ '+t.ideal+' '+(unit||'g'))}</text>
   </svg>`;
 }
 function render(ds){
@@ -146,8 +149,34 @@ function render(ds){
     <div class="k">${fmt(m.kcal)}</div></div>`).join('')+
     `<div class="tot"><div>Total</div><div><div class="m">P ${fmt(tot.protein)} · C ${fmt(tot.carbs)} · F ${fmt(tot.fat)} · Fib ${fmt(tot.fiber)}</div></div><div>${fmt(tot.kcal)}</div></div>`
     :'<div class="empty">No entries yet.</div>';
-  renderTrend(ds);
+  renderTrend(ds); renderWeek(ds);
   if(location.hash.slice(1)!==ds) history.replaceState(null,'','#'+ds);
+}
+function renderWeek(ds){
+  const d0=pd(ds), ws=new Date(d0); ws.setDate(d0.getDate()-((d0.getDay()+6)%7));
+  const we=new Date(ws); we.setDate(ws.getDate()+6);
+  const wk=((D.training||{}).weeks||{})[iso(ws)]||{z2_bike:0,z5_all:0,sessions:[]};
+  const cur=iso(ws)===(()=>{const n=new Date(),m=new Date(n);m.setDate(n.getDate()-((n.getDay()+6)%7));return iso(m)})();
+  document.getElementById('wktitle').textContent=cur?'This week':'Week of '+MO[ws.getMonth()]+' '+ws.getDate();
+  document.getElementById('wkrange').textContent=`${MO[ws.getMonth()]} ${ws.getDate()} – ${MO[we.getMonth()]} ${we.getDate()} · Mon–Sun`;
+  const g2=T.z2_week||300, lo=T.z5_week_low||20, hi=T.z5_week_high||24;
+  const z2=wk.z2_bike||0, z5=wk.z5_all||0, R=Math.round;
+  const c2=z2>=g2?[C.green,'Goal met'+(z2>g2?' · +'+R(z2-g2)+' min':'')]:[C.amber,R(g2-z2)+' min to go'];
+  const c5=z5<lo?[C.amber,R(lo-z5)+' min to band']:z5<=hi?[C.green,'In band']:z5<=30?[C.blue,'Just above band · +'+R(z5-hi)]:[C.amber,'Well over · +'+R(z5-hi)+' min, ease off'];
+  document.getElementById('wkrings').innerHTML=
+   `<div class="ring">${ring(z2,{min:g2,max:g2,ideal:g2},c2[0],'min')}<div class="lab">Z2 bike</div><div class="st" style="color:${c2[0]}">${c2[1]}</div><div class="rg"><b>${R(z2)} / ${g2} min</b></div></div>`+
+   `<div class="ring">${ring(z5,{min:lo,max:hi,ideal:hi},c5[0],'min','/ '+lo+'–'+hi+' min')}<div class="lab">Z5 all sessions</div><div class="st" style="color:${c5[0]}">${c5[1]}</div><div class="rg"><b>${R(z5)} / ${lo}–${hi} min</b></div></div>`;
+  // per-day bars: Z2 bike (green) with Z5 minutes (red) in the label row
+  const W=460,H=96,pl=6,pr=6,pt=16,pb=30,cw=(W-pl-pr)/7, per=[];
+  for(let i=0;i<7;i++){const d=new Date(ws);d.setDate(ws.getDate()+i);const s=iso(d);
+    const ss=(wk.sessions||[]).filter(x=>x.d===s);per.push([d,ss.reduce((a,x)=>a+x.z2,0),ss.reduce((a,x)=>a+x.z5,0),ss.length])}
+  const mx=Math.max(60,...per.map(p=>p[1])), y=v=>pt+(H-pt-pb)*(1-v/mx);
+  let s=`<svg class="wd" viewBox="0 0 ${W} ${H}"><line x1="${pl}" x2="${W-pr}" y1="${y(0)}" y2="${y(0)}" stroke="#26272c"/>`;
+  per.forEach(([d,a,b,n],i)=>{const cx=pl+i*cw+cw/2,bw=cw*.5,sel=iso(d)===ds;
+    if(a>0){s+=`<rect x="${cx-bw/2}" y="${y(a)}" width="${bw}" height="${y(0)-y(a)}" rx="3" fill="${C.green}" opacity="${sel?1:.7}"/><text x="${cx}" y="${y(a)-4}" fill="#8b8d96" font-size="11" text-anchor="middle">${R(a)}</text>`}
+    s+=`<text x="${cx}" y="${H-16}" fill="${sel?'#f2f2f5':'#6b6d76'}" font-size="11" text-anchor="middle" font-weight="${sel?700:400}">${WD[d.getDay()][0]}${d.getDate()}</text>`;
+    s+=`<text x="${cx}" y="${H-3}" fill="${b>0?C.red:'#3a3b42'}" font-size="10" text-anchor="middle" font-weight="600">${b>0?'Z5 '+R(b):(n?'·':'')}</text>`});
+  document.getElementById('wkdays').innerHTML=`<div class="tl" style="margin-top:10px">Daily Z2 bike min · Z5 min in red · ${(wk.sessions||[]).length} sessions</div>`+s+'</svg>';
 }
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function renderTrend(ds){
@@ -193,7 +222,7 @@ async function refresh(){
   try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'}); if(!r.ok)return;
     const txt=await r.text(); const nd=JSON.parse(txt); const js=JSON.stringify(nd); if(js===lastJSON)return;
     const wasLatest=pk.value===days[days.length-1]; lastJSON=js;
-    for(const k in D.days) delete D.days[k]; Object.assign(D.days,nd.days); Object.assign(T,nd.targets);
+    for(const k in D.days) delete D.days[k]; Object.assign(D.days,nd.days); Object.assign(T,nd.targets); if(nd.training) D.training=nd.training;
     days=Object.keys(D.days).sort(); fillPicker();
     render(wasLatest||!D.days[pk.value]?days[days.length-1]:pk.value);
     if(nd.built) document.getElementById('foot').textContent='Updated '+nd.built;
